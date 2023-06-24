@@ -1,0 +1,42 @@
+*{
+    background-color: yellow; 
+    /* margin: 0px;
+    padding: 0px;
+     align-items: center;
+    align-content: center;
+    text-align:center;
+    margin: auto; */
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+
+
+
+.box1:hover{
+    width: 500px;
+}
+
+.box2:hover{
+    width: 300px;
+    height: 400px;
+}
+
+.box3:hover{
+    width: 400px;
+}
+
+
+ol,li{
+    /* list-style:decimal; */
+    /* color: black; */
+    text-align: center;
+}
+
+.box-container{
+    align-items: center;
+}

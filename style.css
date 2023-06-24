@@ -1,0 +1,39 @@
+*{
+    background-color: yellow;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    align-content: center;
+    text-align:center;
+    /* margin: auto; */
+}
+
+li{
+    margin-bottom: 20px;
+    /* display: inline; */
+    /* display: inline-block; */
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    height:150px;
+    width: 150px;
+    background-color: green;
+    transition-duration: 1s;
+    transform: skew(-20deg);
+    /* display: inline; */
+}
+
+.box1:hover{
+    transform: skew(20deg);
+}
+
+.box2{
+
+    transform: skew(-20deg);
+}
+.box2:hover{
+    transform: skew(0deg,-20deg);
+}
