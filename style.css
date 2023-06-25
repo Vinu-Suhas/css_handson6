@@ -1,20 +1,31 @@
-*{
+   *{ 
     background-color: yellow;
-    margin: 0px;
-    padding: 0px;
-    align-items: center;
+    /* margin: 0px;
+    padding: 0px; */
+    /* align-items: center;
     align-content: center;
-    text-align:center;
+    text-align:center; */
     /* margin: auto; */
+ }
+
+body{
+    padding: 0px;
+    margin: 0px;
 }
 
+/* ol{
+    list-style: decimal;
+    color: black;
+} */
 li{
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     /* display: inline; */
     /* display: inline-block; */
-
-    display: flex;
-    justify-content: space-evenly;
+    /* align-items: center; */
+    /* display: flex; */
+    margin-left: 350px;
+    margin-bottom:90px ;
+    /* justify-content: space-evenly; */
 }
 
 .box{
@@ -22,11 +33,105 @@ li{
     width: 150px;
     background-color: green;
     transition-duration: 1s;
-    transform: skew(-20deg);
-    /* display: inline; */
+    display: inline-block;
+    margin-left: 50px;
+    /* gap:20px */
 }
 
-.box1:hover{
+.box-container{
+    /* justify-content: space-evenly; */
+    display: inline-block;
+    justify-content: center;
+    
+}
+
+.box1{
+    background-color: darkcyan;
+    animation: animation1 3s  infinite  ;
+}
+
+.box2{
+    animation: animation2 3s  infinite  ;
+    background-color: rgb(128, 0, 255);
+}
+
+.box3{
+    background-color: darkcyan;
+    animation: animation3 5s infinite;
+}
+
+.box4{
+    background-color:darkblue;
+    animation: animation4 3s infinite;
+}
+
+.box5{
+    background-color: darkred ;
+    animation: animation5 3s infinite;
+}
+
+.box6{
+    background-color: darkgreen;
+    animation: animation6 3s infinite;
+}
+
+
+@keyframes animation1 {
+    0%,100%{
+        transform: skew(-20deg);
+    }
+    50%{
+        transform: skew(30deg);
+
+    }
+}
+
+
+@keyframes animation2 {
+    0%,100%{
+        transform: skew(20deg,10deg);
+    
+    }
+    50%{
+        transform: skew(0deg,-15deg);
+
+    }
+}
+
+@keyframes animation3 {
+0%{
+    transform: rotate(-360deg);
+
+}
+}
+
+@keyframes animation4 {
+    0%,100%{
+       transform: scaleY(0.5);
+    }
+    50%{
+  transform: scaleY(1);
+    }
+}
+@keyframes animation5 {
+    0%,100%{
+        transform: scaleX(.5);
+    }
+    50% {
+        transform:scaleX(1);
+    } 
+}
+
+@keyframes animation6 {
+    0%,100%{
+        transform: rotate(90deg);
+    }    
+    50%{
+        transform: rotate(-180deg);
+    }
+}
+
+/* .box1:hover{
     transform: skew(20deg);
 }
 
@@ -35,5 +140,5 @@ li{
     transform: skew(-20deg);
 }
 .box2:hover{
-    transform: skew(0deg,-20deg);
-}
+    transform: skew(0deg,-10deg);
+} */
